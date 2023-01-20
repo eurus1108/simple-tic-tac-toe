@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-import javax.swing.plaf.metal.OceanTheme;
-
 public class Main {
     public static void main(String[] args) {
         char[][] grid = new char[3][3];
@@ -37,7 +35,7 @@ public class Main {
         } else if (xWins) {
             System.out.println("X wins");
         } else if (playerInput.indexOf('_') == -1) {
-            System.out.println("Impossible");
+            System.out.println("Draw");
         } else {
             System.out.println("Game not finished");
         }
