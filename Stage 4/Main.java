@@ -36,10 +36,12 @@ public class Main {
                 System.out.println("You should enter numbers!");
                 continue;
             }
+            
             if (x < 1 || x > 3 || y < 1 || y > 3) {
                 System.out.println("Coordinates should be from 1 to 3!");
                 continue;
             }
+
             // check if the cell is already occupied
             if (grid[x - 1][y - 1] == 'X' || grid[x - 1][y - 1] == 'O') {
                 System.out.println("This cell is occupied! Choose another one!");
@@ -47,8 +49,6 @@ public class Main {
             }
 
             // update the grid and print it
-            // playerInput = playerInput.substring(0, index) + "X" +
-            // playerInput.substring(index + 1);
             grid[x - 1][y - 1] = 'X';
             printGameBoard(grid);
             break;
